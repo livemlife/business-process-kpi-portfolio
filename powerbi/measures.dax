@@ -1,0 +1,9 @@
+Tasks = COUNTROWS(fact)
+Average Work Minutes = AVERAGE(fact[work_minutes])
+Average Wait Minutes = AVERAGE(fact[wait_minutes])
+Error Rate = DIVIDE(SUM(fact[error]), [Tasks])
+SLA Rate = DIVIDE(SUM(fact[within_sla]), [Tasks])
+Work Reduction =
+VAR BeforeValue = CALCULATE([Average Work Minutes], REMOVEFILTERS(fact[phase]), fact[phase] = "Before")
+VAR AfterValue = CALCULATE([Average Work Minutes], REMOVEFILTERS(fact[phase]), fact[phase] = "After")
+RETURN IF(ISBLANK(BeforeValue) || ISBLANK(AfterValue) || BeforeValue = 0, BLANK(), 1 - DIVIDE(AfterValue, BeforeValue))

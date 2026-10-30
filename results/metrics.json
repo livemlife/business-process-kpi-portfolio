@@ -1,0 +1,7 @@
+{
+  "tasks": 2880,
+  "work_minutes_reduction_ratio": 0.2021890195292132,
+  "before_error_rate": 0.08541666666666667,
+  "after_error_rate": 0.05625,
+  "after_sla_rate": 0.9479166666666666
+}

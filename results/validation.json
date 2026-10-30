@@ -1,0 +1,30 @@
+[
+  {
+    "check": "unique primary key",
+    "passed": true
+  },
+  {
+    "check": "nonempty fact table",
+    "passed": true
+  },
+  {
+    "check": "required columns not null",
+    "passed": true
+  },
+  {
+    "check": "valid flags",
+    "passed": true
+  },
+  {
+    "check": "positive work nonnegative wait",
+    "passed": true
+  },
+  {
+    "check": "SQL group counts reconcile",
+    "passed": true
+  },
+  {
+    "check": "Python SQL work means match",
+    "passed": true
+  }
+]
