@@ -1,5 +1,21 @@
 # 業務KPIと処理プロセスの改善分析
 
+![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-SQLite-003B57?logo=sqlite&logoColor=white) ![Data](https://img.shields.io/badge/Data-Synthetic%20data-0F766E) ![Scope](https://img.shields.io/badge/Scope-2880%20tasks-475569)
+
+作業時間・待ち時間・品質を組み合わせ、処理プロセスの改善仮説を検討する模擬分析です。
+
+**分析の重点：** KPI設計・難易度別比較・構成調整・ブートストラップ
+
+| 閲覧目的 | 成果物 |
+| --- | --- |
+| 結果を確認 | [期別KPI](results/phase_summary.csv) · [難易度別集計](results/complexity_summary.csv) · [構成調整比較](results/standardized_comparison.csv) |
+| 分析コードを確認 | [Python](analyze.py) · [SQL](analysis.sql) |
+| データの定義を確認 | [分析用CSV](data/fact.csv) · [データ辞書](data/DICTIONARY.md) |
+| 再現性を確認 | [チェック結果](results/validation.json) · [依存パッケージ](requirements.txt) |
+| 報告書を閲覧 | [HTMLレポート](report.html) — ダウンロード・展開後にブラウザーで開く |
+| 今後のBI展開 | [Power BI構築仕様](powerbi/BUILD.md) · [DAX例](powerbi/measures.dax) — Desktop未検証 |
+
+
 模擬データ 個人学習プロジェクト。企業の実績や勤務先のデータを示すものではありません。
 
 ## 課題
@@ -41,3 +57,9 @@ Python 3.11以降で `python -m pip install -r requirements.txt` を実行後、
 ![quality](./charts/quality.svg)
 
 HTMLレポートはこのリポジトリをダウンロード・展開し、`report.html` をブラウザーで開くと閲覧できます。
+
+
+## 関連ポートフォリオ
+
+- [financial-market-analysis-portfolio](https://github.com/livemlife/financial-market-analysis-portfolio)
+- [software-quality-defect-portfolio](https://github.com/livemlife/software-quality-defect-portfolio)
